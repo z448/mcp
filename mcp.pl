@@ -4,7 +4,7 @@
 
 use Term::ANSIColor;
 use HTTP::Tiny;
-use JSON::PP;
+use JSON;
 use Getopt::Std;
 
 die "Usage:\n\n\ mcpq -s <Module::Name>\n\n" unless @ARGV;
