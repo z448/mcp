@@ -9,7 +9,7 @@ WriteMakefile(
     VERSION_FROM     => 'lib/App/mcp.pm',
     ABSTRACT_FROM    => 'lib/App/mcp.pm',
     LICENSE          => 'artistic_2',
-    PL_FILES         => {},
+    PL_FILES         => {'bin/mcp'},
     MIN_PERL_VERSION => 5.006,
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => 0,
