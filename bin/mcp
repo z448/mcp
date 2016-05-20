@@ -1,4 +1,4 @@
- #!/usr/bin/env perl
+#!/usr/bin/env perl
 # takes -s <module::name> as arg and returns 20 distribution-names that match pattern
 # use it before build to find exact dist-name
 
@@ -12,7 +12,7 @@ die "Usage:\n\n\ mcpq -s <Module::Name>\n\n" unless @ARGV;
 getopts('s:', \%opts);
 
 my $pm_req='https://metacpan.org/search/autocomplete?q='."$opts{s}";
-my $meta_json =qx!curl -sL $pm_req!;
+my $meta_json =qx!curl -skL $pm_req!;
 die "https request failed!\n" unless decode_json $meta_json;
 
 _parse($meta_json);
@@ -48,7 +48,7 @@ sub _parse {
 
 =over 12
 
-=item Search Metacpan for module names
+=item Search distributions on Metacpan 
 
 =back
 
@@ -56,7 +56,7 @@ sub _parse {
 
 =over 12
 
-=item C<mcp git>
+=item C<mcp -s git>
 
 =back
 
