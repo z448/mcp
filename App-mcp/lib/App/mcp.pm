@@ -9,6 +9,21 @@ use HTTP::Tiny;
 use JSON;
 use Getopt::Std;
 
+=head1 VERSION
+
+Version 0.01
+
+=cut
+
+our $VERSION = '0.01';
+
+BEGIN {
+    require Exporter;
+    our $VERSION = 0.01;
+    our @ISA = qw(Exporter);
+    our @EXPORT = qw( _parse );
+}
+
 die "Usage:\n\n\ mcpq -s <Module::Name>\n\n" unless @ARGV;
 
 getopts('s:', \%opts);
@@ -68,13 +83,7 @@ sub _parse {
 
 App::mcp - The great new App::mcp!
 
-=head1 VERSION
 
-Version 0.01
-
-=cut
-
-our $VERSION = '0.01';
 
 
 =head1 SYNOPSIS
