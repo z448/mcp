@@ -34,29 +34,38 @@ sub _parse {
     print "\n";
 }
 
-=HEAD1 NAME
+=head1 NAME
 
 =over 12
 
-=item mcp
+=item mcpq
 
-=item Meta Cpan Query
+=item Metacpan Query
 
 =back
 
-=HEAD1 SYNOPSIS
+=head1 SYNOPSIS
 
 =over 12
 
-=item Search distributions on Metacpan 
+=item Search for distribution on Metacpan 
+
+=item search is case insensitive
 
 =back
 
-=HEAD1 EXAMPLES
+=head1 EXAMPLES
 
 =over 12
 
-=item C<mcp -s git>
+=item L<Search for distribution containing 'git' keyword>
+
+
+=item C<mcpq -s git>
+
+=item or
+
+=item C<:: -s git>
 
 =back
 
