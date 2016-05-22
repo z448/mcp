@@ -10,7 +10,7 @@
 
 # GIF
 
-![alios](https://raw.githubusercontent.com/z448/alios/master/alios.gif)
+!\[mcpq\](https://raw.githubusercontent.com/z448/mcpq/master/mcpq.gif)
 
 # EXAMPLES
 
