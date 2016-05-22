@@ -62,7 +62,7 @@ sub _parse {
 
 =over 12
 
-L<Search for distribution containing 'git' keyword>
+Search for distribution containing 'git' keyword
 
 =item C<mcpq -s git> or C<:: -s git>
 
