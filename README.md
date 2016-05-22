@@ -10,7 +10,7 @@
 
 # GIF
 
-!\[mcpq\](https://raw.githubusercontent.com/z448/mcpq/master/mcpq.gif)
+![mcpq](https://raw.githubusercontent.com/z448/mcpq/master/mcpq.gif)
 
 # EXAMPLES
 
