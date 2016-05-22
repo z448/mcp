@@ -54,12 +54,17 @@ sub _parse {
 
 =back
 
+=head1 GIF
+
+=over 12
+
+![alios](https://raw.githubusercontent.com/z448/alios/master/alios.gif)
+
 =head1 EXAMPLES
 
 =over 12
 
 =item L<Search for distribution containing 'git' keyword>
-
 
 =item C<mcpq -s git>
 
