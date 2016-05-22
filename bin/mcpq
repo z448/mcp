@@ -56,21 +56,15 @@ sub _parse {
 
 =head1 GIF
 
-=over 12
-
 ![alios](https://raw.githubusercontent.com/z448/alios/master/alios.gif)
 
 =head1 EXAMPLES
 
 =over 12
 
-=item L<Search for distribution containing 'git' keyword>
+L<Search for distribution containing 'git' keyword>
 
-=item C<mcpq -s git>
-
-=item or
-
-=item C<:: -s git>
+=item C<mcpq -s git> or C<:: -s git>
 
 =back
 
