@@ -64,7 +64,7 @@ sub _parse {
 
 Search for distribution containing 'git' keyword
 
-=item C<mcpq -s git> or C<:: -s git>
+C<mcpq -s git> or C<:: -s git>
 
 =back
 
