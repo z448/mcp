@@ -7,11 +7,12 @@ use HTTP::Tiny;
 use JSON;
 use Getopt::Std;
 
-die "Usage:\n\n\ mcpq -s <Module::Name>\n\n" unless @ARGV;
+die "Usage:\n\n\ mcpq <keyword>\n\n" unless @ARGV;
 
 getopts('s:', \%opts);
 
-my $pm_req='https://metacpan.org/search/autocomplete?q='."$opts{s}";
+my $pm_req='https://metacpan.org/search/autocomplete?q='."$ARGV[0]";
+#my $pm_req='https://metacpan.org/search/autocomplete?q='."$opts{s}";
 my $meta_json =qx!curl -skL $pm_req!;
 die "https request failed!\n" unless decode_json $meta_json;
 
@@ -64,7 +65,7 @@ sub _parse {
 
 Search for distribution containing 'git' keyword
 
-C<mcpq -s git> or C<:: -s git>
+C<mcpq git>
 
 =back
 
