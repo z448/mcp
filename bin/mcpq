@@ -22,11 +22,11 @@ sub _parse {
     my $pm = decode_json $j;
     my $i==1;
 
-    for my $dist (@$pm) {
+    for my $dist ( @{$pm->{'suggestions'}} ){
         if ($i % 2) {
-            print colored(qq!$$dist{'distribution'}!, q!white on_black!);
+            print colored(qq!$dist->{'value'}!, q!white on_black!);
         } else {
-            print colored(qq!$$dist{'distribution'}!, q!white on_black!);
+            print colored(qq!$dist->{'value'}!, q!white on_black!);
         }
         print colored(qq!\ \:\:\ !, q!red on_black!);
         $i++;
